@@ -1,0 +1,41 @@
+html, body {
+    width: auto !important;
+    overflow-x: hidden !important;
+}
+
+.welcome, .game {
+    background-color: #98abd0;
+    text-align: center;
+    font-family: 'Syncopate', sans-serif;
+    color: #ffffff;
+    letter-spacing: 10px;
+}
+
+.welcome h1 {
+    font-family: 'Syncopate', sans-serif;
+    color: #ffffff;
+    font-size: 30px;
+    letter-spacing: 10px;
+    padding: 30px;
+}
+
+.welcome .explanation {
+    padding: 50px;
+    background-color: #7184a9;
+    height: 150px;
+}
+
+.welcome .play {
+    padding-top: 30px;
+    margin: auto;
+    font-size: 50px;
+    height: 150px;
+    cursor: pointer;
+    background-color: #545e79;
+}
+
+.welcome .footer {
+    padding: 50px;
+    height: 500px;
+    background-color: #7082a4;
+}

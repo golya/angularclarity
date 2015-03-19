@@ -1,1 +1,16 @@
-<div ng-controller="welcomeCtrl">{{welcomeMessage}}</div>
+<div ng-controller="welcomeCtrl">
+    <div class="container-fluid welcome">
+        <div class="row">
+            <div class="col-md-12"><h1>{{welcomeMessage}}</h1></div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 explanation">This game bla bla bla</div>
+        </div>
+        <div class="row">
+            <div class="col-md-12"><div class="play" ng-click="play('/game')">play</div></div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 footer"><h1>ENJOY THE GAME</h1></div>
+        </div>
+    </div>
+</div>
