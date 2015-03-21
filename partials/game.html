@@ -3,5 +3,15 @@
         <div class="row">
             <div class="col-md-12"><h1>{{game}}</h1></div>
         </div>
+        <div class="row">
+            <div class="col-md-4"><h1>Level: {{state.level}}</h1></div>
+            <div class="col-md-4"><h1>Number of Enemies: {{state.numberOfEnemies}}</h1></div>
+            <div class="col-md-4"><h1>Time: {{state.maxTime}}</h1></div>
+        </div>
+        <div class="row">
+            <div class="col-md-4"><h1>-</h1></div>
+            <div class="col-md-4"><a ng-click="win()">win</a></div>
+            <div class="col-md-4"><a ng-click="home()">home</a></div>
+        </div>
     </div>
 </div>

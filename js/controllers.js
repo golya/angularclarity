@@ -6,6 +6,31 @@ clarifyControllers.controller('welcomeCtrl', function ($scope, $location) {
     };
 });
 
-clarifyControllers.controller('gameCtrl', function ($scope) {
-    $scope.game = 'GAME';
-});
+clarifyControllers.controller('gameCtrl', [
+    '$scope',
+    'gamestate',
+    '$location',
+    function ($scope, gamestate, $location) {
+        $scope.game = 'GAME';
+        $scope.state = gamestate;
+        $scope.win = function () {
+            gamestate.level++;
+            $location.path( '/win' );
+        }
+        $scope.home = function () {
+            $location.path( '/home' );
+        }
+    }
+]);
+
+clarifyControllers.controller('winCtrl', [
+    '$scope',
+    'gamestate',
+    '$location',
+    function ($scope, gamestate, $location) {
+        $scope.state = gamestate;
+        $scope.back = function () {
+            $location.path( '/game' );
+        }
+    }
+]);

@@ -39,3 +39,13 @@ html, body {
     height: 500px;
     background-color: #7082a4;
 }
+
+a {
+    padding: 30px;
+    text-align: center;
+    font-family: 'Syncopate', sans-serif;
+    color: #ffffff;
+    font-size: 30px;
+    letter-spacing: 10px;
+    cursor: pointer;
+}

@@ -14,6 +14,10 @@ function($routeProvider) {
             templateUrl: './partials/game.html',
             controller: 'gameCtrl'
         }).
+        when('/win', {
+            templateUrl: './partials/win.html',
+            controller: 'winCtrl'
+        }).
         otherwise({
             redirectTo: '/welcome'
         });
