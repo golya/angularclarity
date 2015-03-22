@@ -14,12 +14,12 @@ clarifyControllers.controller('gameCtrl', [
         $scope.game = 'GAME';
         $scope.state = gamestate;
         $scope.win = function () {
-            gamestate.level++;
+            gamestate.levelUp();
             $location.path( '/win' );
-        }
+        };
         $scope.home = function () {
             $location.path( '/home' );
-        }
+        };
     }
 ]);
 
@@ -31,6 +31,6 @@ clarifyControllers.controller('winCtrl', [
         $scope.state = gamestate;
         $scope.back = function () {
             $location.path( '/game' );
-        }
+        };
     }
 ]);
