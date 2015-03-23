@@ -18,6 +18,10 @@ function($routeProvider) {
             templateUrl: './partials/win.html',
             controller: 'winCtrl'
         }).
+        when('/lose', {
+            templateUrl: './partials/lose.html',
+            controller: 'loseCtrl'
+        }).
         otherwise({
             redirectTo: '/welcome'
         });
