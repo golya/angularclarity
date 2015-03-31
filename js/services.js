@@ -23,6 +23,12 @@ clarifyControllers.factory('gamestate', function() {
         },
         getPlayerSize: function () {
             return playerSize;
+        },
+        resetState: function() {
+            level = 1;
+            numberOfEnemies = 2;
+            maxTime = 10;
+            playerSize = 5;
         }
     };
 
