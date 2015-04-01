@@ -40,6 +40,10 @@ html, body {
     background-color: #7082a4;
 }
 
+.game .scoreboard {
+    font-size: 5em;
+}
+
 a {
     padding: 30px;
     text-align: center;
