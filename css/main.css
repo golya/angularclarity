@@ -3,6 +3,11 @@ html, body {
     overflow-x: hidden !important;
 }
 
+@media only screen and (max-width: 767px) {
+    body {
+    }
+}
+
 .welcome, .game {
     background-color: #98abd0;
     text-align: center;
