@@ -5,6 +5,7 @@ html, body {
 
 @media only screen and (max-width: 767px) {
     body {
+        background-image: url(img/image05.jpg);
     }
 }
 
